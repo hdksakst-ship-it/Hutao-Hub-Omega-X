@@ -1,7 +1,6 @@
--- ⚡ Hutao Hub Maintenance Notice (With Copy Button) ⚡
+-- ⚡ Hutao Hub Update Notice (v4) ⚡
 local CoreGui = game:GetService("CoreGui")
 local LocalizationService = game:GetService("LocalizationService")
-local HttpService = game:GetService("HttpService")
 
 -- Detect player country
 local result, countryCode = pcall(function()
@@ -9,13 +8,13 @@ local result, countryCode = pcall(function()
 end)
 
 -- Default language English
-local message = "Script Hutao Hub is under maintenance and fixing bugs.\nPlease check the latest video for the script."
+local message = "A new version v4 is available.\nPlease open the latest video to get the v4 script."
 local buttonText = "Copy Video Link"
-local videoLink = "Wait 2h To Get Link" -- 🔗 đổi link tại đây
+local videoLink = "5min" -- 🔗 đổi link tại đây
 
 -- If player is from Vietnam -> change to Vietnamese
 if result and countryCode == "VN" then
-    message = "Script Hutao Hub đang bảo trì và fix lỗi.\nHãy mở video mới nhất để nhận script."
+    message = "Đã có phiên bản v4.\nHãy mở video này để nhận phiên bản v4 của script."
     buttonText = "Sao chép link video"
 end
 
@@ -61,7 +60,7 @@ Logo.Position = UDim2.new(0, 0, 0.05, 0)
 Logo.Size = UDim2.new(1, 0, 0, 40)
 Logo.Parent = Frame
 
--- Notice message (cao hơn)
+-- Notice message
 local Notice = Instance.new("TextLabel")
 Notice.Font = Enum.Font.GothamMedium
 Notice.Text = message
@@ -69,7 +68,7 @@ Notice.TextWrapped = true
 Notice.TextColor3 = Color3.fromRGB(200, 240, 255)
 Notice.TextSize = 17
 Notice.BackgroundTransparency = 1
-Notice.Position = UDim2.new(0.1, 0, 0.28, 0) -- 📌 chỉnh cao lên
+Notice.Position = UDim2.new(0.1, 0, 0.28, 0)
 Notice.Size = UDim2.new(0.8, 0, 0.5, 0)
 Notice.Parent = Frame
 
