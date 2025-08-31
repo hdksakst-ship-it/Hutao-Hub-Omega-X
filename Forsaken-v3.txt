@@ -10,7 +10,7 @@ end)
 -- Default language English
 local message = "A new version v4 is available.\nPlease open the latest video to get the v4 script."
 local buttonText = "Copy Video Link"
-local videoLink = "5min" -- 🔗 đổi link tại đây
+local videoLink = "https://youtu.be/J6u7p5jzNvg?si=iKC60pnxGHcfnn6z" -- 🔗 đổi link tại đây
 
 -- If player is from Vietnam -> change to Vietnamese
 if result and countryCode == "VN" then
